@@ -63,7 +63,7 @@ apt-get update
 Dependencies:
 
 ```
-apt-get install git build-essential zlib1g-dev liblzma-dev python3-magic python3-pip autoconf python-is-python3 zip unzip vim binwalk lzop cramfsswap tree 
+apt-get install git build-essential liblzo2-dev lzop zlib1g-dev liblzma-dev python3-dev python3-pip python3-magic autoconf python-is-python3 zip unzip vim binwalk lzop cramfsswap tree
 ```
 
 Show list of user-installed packages:
@@ -81,7 +81,7 @@ sudo apt-get install --install-suggests <PACKAGE_NAME>
 Install Python packages:
 
 ```
-pip install python-lzo crcmod zstandard ubi_reader
+pip install setuptools wheel python-lzo crcmod zstandard ubi_reader
 ```
 
 ### Clone firmware-mod-kit (created in /home):
