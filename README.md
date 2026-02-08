@@ -63,7 +63,7 @@ apt-get update
 Dependencies:
 
 ```
-apt-get install git build-essential zlib1g-dev liblzma-dev python3-magic autoconf python-is-python3 zip unzip vim binwalk lzop cramfsswap tree 
+apt-get install git build-essential zlib1g-dev liblzma-dev python3-magic python3-pip autoconf python-is-python3 zip unzip vim binwalk lzop cramfsswap tree 
 ```
 
 Show list of user-installed packages:

@@ -6,8 +6,12 @@ ENV TZ=America/Los_Angeles
 
 RUN apt-get update && apt-get install -y git \
                 build-essential \
+                liblzo2-dev \
+                lzop \
                 zlib1g-dev \
                 liblzma-dev \
+                python3-dev \
+                python3-pip \
                 python3-magic \
                 autoconf \
                 python-is-python3 \
@@ -18,8 +22,12 @@ RUN apt-get update && apt-get install -y git \
                 lzop \
                 cramfsswap \
                 tree \
-                squashfs-tools \
                 && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt ./
+
+RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
+    pip install --no-cache-dir -r requirements.txt 
 
 WORKDIR /home
 

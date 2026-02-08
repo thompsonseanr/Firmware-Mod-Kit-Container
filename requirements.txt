@@ -1,0 +1,4 @@
+python-lzo 
+crcmod 
+zstandard 
+ubi_reader
