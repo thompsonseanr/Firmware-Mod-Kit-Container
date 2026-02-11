@@ -8,7 +8,15 @@
 > [Running Processes In A Podman Container](https://www.nas.nasa.gov/hecc/support/kb/running-processes-in-a-podman-container_696.html)  
 
 
-## Podman and Ubuntu Focal
+# Build from Dockerfile:
+
+### Build image without caching:   
+
+```
+podman build --no-cache -t <NEW_IMAGE_NAME> .
+```
+
+## Podman and Ubuntu Focal Commands Run to Build this Container From Scratch
 
 ### Pull Container Image:
 
@@ -116,10 +124,3 @@ podman run -it -d --rm <CONTAINER_ID_OR_NAME>
 podman stop <CONTAINER_ID_OR_NAME>
 ```
 
-# Dockerfile
-
-### Build image without caching:   
-
-```
-podman build --no-cache -t <NEW_IMAGE_NAME> .
-```
