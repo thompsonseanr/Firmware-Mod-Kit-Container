@@ -36,7 +36,7 @@ podman volume create <VOLUME_NAME>
 podman volume ls
 ```
 
-### Start container with volume and bind mount
+### Start container with volume and/or bind mount
 
 - add flag to remove created container after stopping: `--rm`  
 - run detached: `-d`
@@ -64,6 +64,7 @@ podman exec -it 8506dff92bfe /bin/bash
 
 ### For Ubuntu:
 
+Update apt repos:
 ```
 apt-get update
 ```
