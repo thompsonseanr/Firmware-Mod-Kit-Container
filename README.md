@@ -16,7 +16,7 @@
 podman build --no-cache -t <NEW_IMAGE_NAME> .
 ```
 
-## Podman and Ubuntu Focal Commands Run to Build this Container From Scratch
+## Instructions to build and run this container from scratch:
 
 ### Pull Container Image:
 
