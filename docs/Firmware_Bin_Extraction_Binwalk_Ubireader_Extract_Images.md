@@ -1,8 +1,8 @@
 # Cudy Firmware Extraction Notes
-## Updated Notes for Cudy Official 2.5.0 M3000-R37-2.5.0-20260112-084313-sysupgrade.zip
+## Updated Notes for a closed OEM Opentwrt-based firmware
 
 ```
-binwalk M3000-R37-2.5.0-20260112-084313-sysupgrade.bin
+binwalk <FIRMWARE>.bin
 ```
 
 ### Find HEXADECIMAL offset (example: 0x200800) to create `.itb`
