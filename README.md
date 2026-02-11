@@ -13,7 +13,7 @@
 ### Build image without caching:   
 
 ```
-podman build --no-cache -t <NEW_IMAGE_NAME> .
+podman build --no-cache -t <NEW_IMAGE_NAME>:<OPTIONAL_TAG> .
 ```
 
 ## Instructions to build and run this container from scratch:
